@@ -1,10 +1,10 @@
-### Backend API Development Assignment - KPA ERP
+# Backend API Development Assignment - KPA ERP
 This repository contains the source code for a backend application developed as part of the KPA ERP assignment. The application is built using Python with the FastAPI framework and connects to a PostgreSQL database.
 
 ## Implemented APIs
 I have implemented the following two API endpoints as per the assignment requirements:
 
-# 1. POST /api/v1/form-data/
+### 1. POST /api/v1/form-data/
 
 Description: This endpoint allows for the creation of a new user form data entry. It accepts a JSON body with user details, validates the input, and stores it in the PostgreSQL database. It prevents duplicate entries based on phone_number and email.
 
@@ -34,7 +34,7 @@ Success Response (201 Created):
   "is_active": true
 }
 
-# 2. GET /api/v1/form-data/
+### 2. GET /api/v1/form-data/
 
 Description: This endpoint retrieves a list of all form data entries currently stored in the database. It supports basic pagination via skip and limit query parameters.
 
@@ -54,7 +54,7 @@ Success Response (200 OK):
   }
 ]
 
-# Technologies and Tech Stack
+### Technologies and Tech Stack
 
 Backend Framework: Python 3.11.9 with FastAPI
 Database: PostgreSQL 17.5
@@ -67,19 +67,19 @@ Environment Configuration: python-dotenv
 
 ## Setup and Installation Instructions
 
-# Clone the repository:
+## Clone the repository:
 git clone https://github.com/amanpratapsingh0210/kpa_backend_assignment/
 cd kpa_backend_assignment
 
-# Create and activate a virtual environment:
+## Create and activate a virtual environment:
 
 python3 -m venv venv
 source venv/bin/activate
 
-# Install dependencies:
+## Install dependencies:
 pip install -r requirements.txt
 
-# Set up the database:
+## Set up the database:
   1. Ensure you have PostgreSQL running.
   2. Create a database named kpa_db.
   3. Create a .env file in the root directory by copying the .env.example (or creating it from scratch).
@@ -87,9 +87,9 @@ pip install -r requirements.txt
 
 DATABASE_URL=postgresql://YOUR_USER:YOUR_PASSWORD@localhost/kpa_db
 
-# Run the application:
+## Run the application:
 uvicorn main:app --reload
 
-# The API will be available at http://127.0.0.1:8000.
+## The API will be available at http://127.0.0.1:8000.
 
-# Interactive API documentation (Swagger UI) is available at http://127.0.0.1:8000/docs.
+## Interactive API documentation (Swagger UI) is available at http://127.0.0.1:8000/docs.
