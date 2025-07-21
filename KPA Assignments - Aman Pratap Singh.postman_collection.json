@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "412d4bdd-e709-47b2-94c7-b3e6bf31ca86",
+		"name": "KPA Assignments - Aman Pratap Singh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "46929502"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"full_name\": \"Aryan Soni\",\r\n  \"phone_number\": \"9876543210\",\r\n  \"email\": \"aryan.soni123@gmail.com\",\r\n  \"date_of_birth\": \"2001-04-17\",\r\n  \"gender\": \"Male\",\r\n  \"city\": \"Varanasi\",\r\n  \"state\": \"Uttar Pradesh\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/v1/form-data/"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/v1/form-data/"
+			},
+			"response": []
+		}
+	]
+}
