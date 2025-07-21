@@ -67,19 +67,19 @@ Environment Configuration: python-dotenv
 
 ## Setup and Installation Instructions
 
-## Clone the repository:
+### Clone the repository:
 git clone https://github.com/amanpratapsingh0210/kpa_backend_assignment/
 cd kpa_backend_assignment
 
-## Create and activate a virtual environment:
+### Create and activate a virtual environment:
 
 python3 -m venv venv
 source venv/bin/activate
 
-## Install dependencies:
+### Install dependencies:
 pip install -r requirements.txt
 
-## Set up the database:
+### Set up the database:
   1. Ensure you have PostgreSQL running.
   2. Create a database named kpa_db.
   3. Create a .env file in the root directory by copying the .env.example (or creating it from scratch).
@@ -87,9 +87,9 @@ pip install -r requirements.txt
 
 DATABASE_URL=postgresql://YOUR_USER:YOUR_PASSWORD@localhost/kpa_db
 
-## Run the application:
+### Run the application:
 uvicorn main:app --reload
 
-## The API will be available at http://127.0.0.1:8000.
+### The API will be available at http://127.0.0.1:8000.
 
-## Interactive API documentation (Swagger UI) is available at http://127.0.0.1:8000/docs.
+### Interactive API documentation (Swagger UI) is available at http://127.0.0.1:8000/docs.
